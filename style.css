@@ -1,0 +1,47 @@
+body {
+    background-color: rgb(249, 246, 225);
+    font-family: "Geist";
+    margin: 0;
+  }
+
+h1 {
+    text-align: center;
+    font-weight:1200;
+ }
+  
+ul.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+li.navbar {
+    float: left;
+  }
+  
+li a.navbar {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+li a:hover.navbar {
+    background-color: #111;
+  }
+
+p {
+    text-align: left;
+}
+
+.about {
+    display: flex;
+}
+
+p.about {
+    padding-bottom: 0.1vh;
+}
