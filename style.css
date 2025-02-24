@@ -45,3 +45,34 @@ p {
 p.about {
     padding-bottom: 0.1vh;
 }
+
+/* ASSIGNMENT DROPDOWNS */
+
+.dropdown-toggle {
+	display: none;
+}
+
+/* Header that acts as the dropdown trigger */
+.dropdown-header {
+	user-select: none;
+	padding-left: 1vw;
+	margin-top: 10px;
+	display: block;
+	font-weight: 350;
+	text-decoration: underline;
+}
+
+/* Hidden content that's triggerable */
+.dropdown-content {
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.3s ease-out;
+	border: 1px solid #cccccc;
+	border-top: none;
+	padding: 0 60px 10px;
+}
+.dropdown-toggle:checked + .dropdown-header + .dropdown-content {
+	max-height: 900px; /* adjust to fit your content */
+	transition: max-height 0.5s ease-in;
+	padding: 0 60px 10px;
+}
